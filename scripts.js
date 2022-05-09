@@ -51,9 +51,20 @@ console.log(recurIndex(null));
 // getLength([1, [2, [3, [4, [5, 6]]]]]) ➞ 6
 
 function getLength(arr) {
-  return arr.flat(Infinity).length;
+  return `num of non-nested items = ${arr.flat(Infinity).length}`;
 }
 console.log("******QUESTION 3******");
 console.log(getLength([1, [2, 3]])); //3
 console.log(getLength([1, [2, [3, 4]]])); //4
 console.log(getLength([1, [2, [3, [4, [5, 6]]]]])); //6
+
+// Ex.4 Create a function that takes an array of strings and returns an array with only the
+// strings that have numbers in them. If there are no strings containing numbers, return an
+// empty array.
+
+function numStrings(arr) {
+  return arr.filter((currentValue) => Number(currentValue));
+}
+console.log("******QUESTION 4******");
+console.log(numStrings(["hello", "2", "223", "world", "4567457"])); //["2", "223", "4567457"]
+console.log(numStrings(["hello", "world"])); //[]
