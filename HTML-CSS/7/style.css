@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box;
 }
-body {
-  border: 10px solid black;
-  height: 100vh;
-}
 .wrapper {
   display: flex;
   position: relative;
