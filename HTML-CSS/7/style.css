@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  border: 10px solid black;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  position: relative;
+}
+.grey-square {
+  width: 150px;
+  height: 150px;
+  border: 10px solid black;
+  background-color: #c0c0c0;
+  margin: 10px;
+}
+
+.white-square {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 10px solid black;
+  background-color: #fb6bb1;
+  left: 95px;
+  top: 50px;
+  box-shadow: 10px 20px #888888;
+  z-index: 3;
+}
